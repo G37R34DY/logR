@@ -1,0 +1,6 @@
+Day Forecast Actual
+Monday 50 43
+Tuesday 50 42
+Wednesday 50 66
+Thursday 50 38
+Friday 75 86 

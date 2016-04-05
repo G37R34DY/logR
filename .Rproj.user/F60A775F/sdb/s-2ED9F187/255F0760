@@ -1,0 +1,18 @@
+{
+    "contents" : "## Various functions to include\n\n# Coefficient of Variation (CV)\n#  Definition: Standard Deviation / Mean = σ/µ\n#  Provides a relative measure of volatility or uncertainty\n#  CV is non-negative and higher CV indicates higher volatility\n\n# CV returns coefficient of variation, digits default 2\n\nCV <- function(mean, sd, CVdigits = 2){\n  round(sd/mean, digits = CVdigits)\n  \n}\n\n\n\n# plots a nprmal function with specified mean and sd\n\n\nplot.normal <- function(mean, sd) {\n  \n  xseq<-seq((mean - 3*sd),(mean + 3*sd),1)\n  densities<-dnorm(xseq, mean,sd)\n  plot(xseq, densities, col=\"darkgreen\",xlab=\"\", ylab=\"Density\", type=\"l\",lwd=2, cex=2, main=\"PDF of Standard Normal\", cex.axis=.8)\n  \n  \n}\n  \n\nvalues<- read.table(\"days.txt\", header = TRUE)\n\nfor(i in seq(1, 5)) values[i,]$error <- sum(values[i,]$Forecast, values[i,]$Actual)\n\n\n",
+    "created" : 1459842543812.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3453352299",
+    "id" : "255F0760",
+    "lastKnownWriteTime" : 1459855888,
+    "path" : "C:/Users/pr00155/Google Drive/Documents/Learning/EdX/SC1x/logR/logR/main.R",
+    "project_path" : "main.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : true,
+    "type" : "r_source"
+}
